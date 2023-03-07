@@ -1,0 +1,51 @@
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: black;
+}
+
+.heading {
+  color: #d8ddf7;
+  font-size: 3rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.password {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background-color: #d8ddf7;
+}
+
+.submit {
+  padding: 0.7rem 2rem;
+  border-radius: 1rem;
+  color: black;
+  background-color: #d8ddf7;
+  transition-duration: 300ms;
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+.submit:active {
+  transform: scale(0.9);
+}
+
+.submit[type="submit"] {
+  background-color: #d8ddf7;
+}

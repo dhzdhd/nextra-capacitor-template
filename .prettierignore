@@ -1,0 +1,6 @@
+.obsidian/
+.vscode/
+node_modules/
+.next/
+android/
+out/

@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@capacitor/android": "^4.6.3",
+    "@capacitor/core": "^4.6.3",
+    "crypto-js": "^4.1.1",
+    "next": "^13.1.6",
+    "next-auth": "^4.19.2",
+    "nextra": "^2.2.14",
+    "nextra-theme-docs": "^2.2.14",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^4.6.3",
+    "@types/crypto-js": "^4.1.1",
+    "@types/node": "^12.12.21",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.1",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "gen-password": "node --es-module-specifier-resolution=node genPassword.mjs",
+    "start": "next start",
+    "type-check": "tsc",
+    "format": "prettier -w .",
+    "export": "next export"
+  }
+}
