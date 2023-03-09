@@ -3,7 +3,7 @@ name: Build Android
 on:
   push:
     branches:
-      - master
+      - master # or main
     # Change according to your needs
     paths:
       - "android/"
@@ -52,11 +52,11 @@ jobs:
       #   uses: softprops/action-gh-release@v1
       #   with:
       #     name: Notes
-      #     tag_name: v1.0.0
+      #     tag_name: v1.0.0  # Increment as needed
       #     prerelease: false
       #     files: |
       #       android/app/build/outputs/apk/release/app-release.apk
       #       android/app/build/outputs/bundle/release/app-release.aab
       #     token: ${{ secrets.GITHUB_TOKEN }}
       #   env:
-      #     GITHUB_REPOSITORY: dhzdhd/notes
+      #     GITHUB_REPOSITORY: <your repo name here. Eg: dhzdhd/notes>

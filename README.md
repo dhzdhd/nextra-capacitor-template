@@ -32,7 +32,8 @@ Note: You need to redeploy without build cache on Vercel if you make changes to 
   - ~~Add the following to the `.gitignore` in the `android/` folder~~ (TODO: automate generation of files to avoid problems with workflow)
     - ~~`keystore.properties`~~
     - ~~`app/*.jks`~~
-
-## TODO
-
-- Add workflow config
+- Workflow (Automated GitHub release)
+  - Setup [GITHUB_TOKEN permissions](https://github.com/softprops/action-gh-release#permissions)
+  - Uncomment lines 51 to 62
+  - Change GITHUB_REPOSITORY env variable to the repository you want the release to be generated at (Eg: dhzdhd/notes)
+  - [About GitHub Actions](https://github.com/features/actions)
