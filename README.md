@@ -25,15 +25,14 @@ Note: You need to redeploy without build cache on Vercel if you make changes to 
     - Rename `dhzdhd` in the `appId` field in `capacitor.config.ts` to a name of your choice
     - Rename the `dhzdhd` in the `android/app/src/main/java/com/dhzdhd/notes` path to the same name
   - Create a `key.jks` file using `keytool` in the `android/app/` folder
-    - `keytool -genkey -v -keystore key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias dhzdhd`
+    - `keytool -genkey -v -keystore key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias <your_name>`
   - Create a `keystore.properties` file in `android/` folder with the following contents
     - `storePassword=<storePassword>`
     - `keyPassword=<keyPassword>`
-  - Add the following to the `.gitignore` in the `android/` folder
-    - `keystore.properties`
-    - `app/*.jks`
+  - ~~Add the following to the `.gitignore` in the `android/` folder~~ (TODO: automate generation of files to avoid problems with workflow)
+    - ~~`keystore.properties`~~
+    - ~~`app/*.jks`~~
 
 ## TODO
 
 - Add workflow config
-- Fix android/ folder

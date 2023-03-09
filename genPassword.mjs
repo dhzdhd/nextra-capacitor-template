@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 const password = process.argv[2];
 
 if (typeof password === "undefined") {
-  console.log("Password not entered!");
+  console.log("\n\nPassword not entered!");
   process.exit(0);
 }
 
