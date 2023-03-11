@@ -34,6 +34,6 @@ Note: You need to redeploy without build cache on Vercel if you make changes to 
     - ~~`app/*.jks`~~
 - Workflow (Automated GitHub release)
   - Setup [GITHUB_TOKEN permissions](https://github.com/softprops/action-gh-release#permissions)
-  - Uncomment lines 51 to 62
+  - Uncomment lines 51 to 62 in the workflow file
   - Change GITHUB_REPOSITORY env variable to the repository you want the release to be generated at (Eg: dhzdhd/notes)
   - [About GitHub Actions](https://github.com/features/actions)
